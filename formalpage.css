@@ -1,0 +1,49 @@
+#formpage{
+    font-size: 12px;
+    background-color:#fff;
+        color: black;
+     border-radius:16px;
+}
+#formalpagebuttons{
+	text-align:center
+	}
+#formalpage{
+margin: 0 auto;
+	width: 250px;
+	height: 300px;
+	}
+
+#formrand{
+    font-size: 34px;
+    font-family: georgia;
+    background-color:#CC0033;
+     color: white;
+    border-radius:26px;
+    
+}
+#IQ{font-size: 24px;
+    font-family: georgia;
+    background-color:#FF6633;
+     color: white;
+    border-radius:30px;
+   
+    
+}
+#FQ{font-size: 24px;
+    font-family: georgia;
+    background-color:#FF6633;
+     color: white;
+    border-radius:26px;
+    }
+#IA{font-size: 24px;
+    font-family: georgia;
+    background-color:#FF6633;
+     color: white;
+    border-radius:26px;
+    }
+#BPQ{font-size: 24px;
+    font-family: georgia;
+    background-color:#FF6633;
+     color: white;
+    border-radius:26px;
+    }

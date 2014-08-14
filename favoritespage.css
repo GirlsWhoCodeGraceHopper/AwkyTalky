@@ -1,0 +1,17 @@
+#favoritepage{
+	margin: 0 auto;
+	width: 250px;
+	height: 300px;
+	}
+#favpage{
+    font-size: 12px;
+    background-color:#fff;
+        color: black;
+     border-radius:16px;
+}
+#Favorite{
+    font-size: 34px;
+    font-family: georgia;
+    color: black;    
+   
+}

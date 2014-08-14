@@ -1,0 +1,11 @@
+#casualrandpage{
+	margin: 0 auto;
+	width: 250px;
+	height: 300px;
+	}
+#Caspage{
+    font-size: 12px;
+    background-color:#fff;
+        color: black;
+     border-radius:16px;
+}
