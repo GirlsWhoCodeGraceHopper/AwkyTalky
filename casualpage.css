@@ -1,0 +1,66 @@
+#casualpage{
+margin: 0 auto;
+	width: 250px;
+	height: 300px;
+	}
+#casualpagebuttons{
+	text-align:center
+}
+#Caspage{
+    font-size: 12px;
+    background-color:#fff;
+    color: black;
+    border-radius:16px;
+}
+#Casrand{
+    font-size: 34px;
+    font-family: georgia;
+    background-color:#0099CC;
+    color: white;
+    border-radius:26px;
+    
+}
+#Sports{
+    font-size: 24px;
+    font-family: georgia;
+    background-color:#00CCCC;
+     color: white;
+    border-radius:30px;
+    
+    
+}
+#Flirt{
+    font-size: 24px;
+    font-family: georgia;
+    background-color:#00CCCC;
+     color: white;
+    border-radius:26px;
+    }
+#TV{
+    font-size: 24px;
+    font-family: georgia;
+    background-color:#00CCCC;
+     color: white;
+    border-radius:26px;
+    }
+#Food{
+    font-size: 24px;
+    font-family: georgia;
+    background-color:#00CCCC;
+     color: white;
+    border-radius:26px;
+    }
+#Store{
+    font-size: 24px;
+    font-family: georgia;
+    background-color:#00CCCC;
+     color: white;
+    border-radius:26px;
+    }
+#Games{
+    font-size: 24px;
+    font-family: georgia;
+    background-color:#00CCCC;
+     color: white;
+    border-radius:26px;
+    }
