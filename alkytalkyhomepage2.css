@@ -1,0 +1,54 @@
+.casual{
+    background-color: blue;
+}
+
+#Equestion{
+    font-size: 12px;
+    background-color:#FF0000;
+        color: white;
+     border-radius:120px;
+         
+}
+#fav{
+     font-size: 12px;
+    background-color:#000;
+        color: white;
+     border-radius:16px;
+    
+}
+#homepagebuttons{
+	margin: 0 auto;
+	width: 250px;
+	height: 300px;
+	}
+#formal{
+     font-size: 30px;
+    background-color:#CC0033;
+    color: white;
+     border-radius:36px;
+	 margin-left: auto;
+    margin-right: auto;
+    width: 6em
+    
+         }
+#casual{
+     font-size: 30px; 
+    background-color:#3399FF;
+    color: white;
+     border-radius:36px;
+    
+         }
+
+div.tip {
+    background-color: white;   
+    width: 350px;
+    height:100px;
+    padding: 5px;
+    border: 4px solid black;
+    text-align: left;
+    font-size: 20px;
+    position:relative;
+	left:-50px;
+	top:100px;
+    
+}
