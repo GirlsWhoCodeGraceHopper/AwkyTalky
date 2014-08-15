@@ -36,13 +36,6 @@ margin: 0 auto;
      color: white;
     border-radius:26px;
     }
-#TV{
-    font-size: 24px;
-    font-family: georgia;
-    background-color:#00CCCC;
-     color: white;
-    border-radius:26px;
-    }
 #Food{
     font-size: 24px;
     font-family: georgia;
@@ -50,14 +43,14 @@ margin: 0 auto;
      color: white;
     border-radius:26px;
     }
-#Store{
+#Shopping{
     font-size: 24px;
     font-family: georgia;
     background-color:#00CCCC;
      color: white;
     border-radius:26px;
     }
-#Games{
+#Entertainment{
     font-size: 24px;
     font-family: georgia;
     background-color:#00CCCC;

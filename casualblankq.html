@@ -4,7 +4,7 @@
 
 		<link rel="stylesheet" href="blankquestionpage.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		
+		<script src="awkytalkquestions.js"></script>
 		
 </head>
 <body bgcolor="#E6E6FA" ID=CasualRandpage>
@@ -14,9 +14,23 @@
 			<input id="Caspage" type="button" data-icon="back" value="Back" style="width: 100px; height: 40px"/>         
 		</form> 
 	</a>
+	<div id="sportsq">
+	</div> 
+	 <body onload="displaysports()">
+	 </body>
+	 
 	<a href="awkytalkyhomepage.html">
 		<form>
 			<input id="Caspage" type="button" data-icon="back" value="home" style="width: 100px; height: 40px"/>         
 		</form> 
 	</a>
+		<form>
+			<input id="Caspage" type="button" data-icon="back" value="next question" style="width: 200px; height: 40px"/>         
+		</form> 
+	<script>
+		window.onload=function(){
+			displaysports();
+		};
+	 </script>
+	 
 </body>
