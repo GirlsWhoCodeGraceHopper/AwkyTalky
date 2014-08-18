@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="formalpage.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src= "awkytalkquestions.js"></script>
-		
+
 		
 </head>
 <body bgcolor="#E6E6FA" ID=formalpage>
@@ -17,20 +17,21 @@
 	</a>
       
     <div id= formalpagebuttons>
+	
 		<a href="formalblankq.html">
 			<input id="formrand" type="button" value="Random" style="width: 200px; height:100px"/>
 		</a>
     
 		<a href="formalblankq.html">
-			<input id="IQ" type="button" value="Interview " style="width: 200px; height:100px" onclick="saveCategory()"/>
+			<input type="button" value="Interview" id="IQ" style="width: 200px; height:100px" onclick="saveInterviewCategory()"/>
 		</a>
 		
 		<a href="formalblankq.html">
-				<input id="FQ" type="button" value="Financial" style="width: 200px; height:100px"/>
+				<input id="FQ" type="button" value="Financial" style="width: 200px; height:100px" onclick="saveFinancialCategory()/>
 		</a>
-		
+
 		<a href="formalblankq.html">
-			<input id="IA" type="button" value="World News" style="width: 200px; height:100px"/>
+			<input id="IA" type="button" value="World News" style="width: 200px; height:100px" onclick="saveWorldNewsCategory()/>
 		</a>
 				
 	</div>

@@ -4,7 +4,7 @@
 
 		<link rel="stylesheet" href="casualpage.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		
+		<script src= "awkytalkquestions.js"></script>
 		
 </head>
  <body bgcolor= "#E6E6FA"id= casualpage> 
@@ -15,27 +15,34 @@
 	</a>
     <div id= formalpagebuttons>  
 		<a href="casualblankq.html">
-			<input id="Casrand" type="button" value="Random" style="width: 200px; height:100px"/>
+			<input id="Casrand" type="button" value="Random" style="width: 200px; height:100px"onclick="saveRandomCategory()"/>
 		</a>
 		
 		<a href="casualblankq.html">
-			<input id="Sports" type="button" value="Sports" style="width: 200px; height:100px"/>
+			<input id="Sports" type="button" value="Sports" style="width: 200px; height:100px"onclick="saveSportsCategory()"/>
 		</a>
 		
 		<a href="casualblankq.html">
-			<input id="Flirt" type="button" value="Flirt" style="width: 200px; height:100px"/>
+			<input id="Flirt" type="button" value="Flirt" style="width: 200px; height:100px"onclick="saveFlirtCategory()"/>
 		</a>
 		
 		<a href="casualblankq.html">
-			<input id="Food" type="button" value="Food" style="width: 200px; height:100px"/>
+			<input id="Food" type="button" value="Food" style="width: 200px; height:100px"onclick="saveFoodCategory()"/>
 		</a>
 		
 		<a href="casualblankq.html">
-			<input id="Shopping" type="button" value="Shopping" style="width: 200px; height:100px"/>
+			<input id="Shopping" type="button" value="Shopping" style="width: 200px; height:100px"onclick="saveShoppingCategory()"/>
 		</a>
 		
 		<a href="casualblankq.html">
-			<input id="Entertainment" type="button" value="Entertainment" style="width: 200px; height:100px"/>
+			<input id="Entertainment" type="button" value="Entertainment" style="width: 200px; height:100px"onclick="saveEntertainmentCategory()"/>
 		</a>
 	</div>
+	<script>
+		//alert("page loaded!");
+		window.onload=function(){ 
+			//alert("aout to display question!"):
+			display();
+		};
+	 </script>
 </body>

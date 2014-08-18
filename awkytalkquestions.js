@@ -1,4 +1,4 @@
-		//we're gonna be making a class
+
 //this is our category class
 function Category(name, listofquestions) {
     this.name = name;
@@ -6,7 +6,7 @@ function Category(name, listofquestions) {
 
     this.printfunction = function () {
         for (var i = 0; i < this.listofquestions.length; i++) {
-            console.log(this.listofquestions[i]);
+         //  console.log(this.listofquestions[i]);
 
         }
     };
@@ -18,29 +18,82 @@ function Category(name, listofquestions) {
 	}
 }
 
-function displayquestion(){
-	var t = $("#question").html(interviewCategory.randomquestion());
-	$("#question").append();
-}
-
-function displaysports(){
-	var s = $("#sportsq").html(sportsCategory.randomquestion());
-	$("#sportsq").append();
-}
-
-
-function displayemergency(){
-	var e = $("#emergencyq").html(emergencyCategory.randomquestion());
-	$("#emergencyq").append();
-}
-
 var category = ""; 
-function saveCategory() {
-	category="interview";
-	category="sports";
-	category="emergency";
+function display(){
+	console.log ("display function");
+	console.log("category = " + window.name);
+	if (window.name == "Interview"){
+		console.log ("if");
+		interview =  new Category("a",interviewquestions);
+		var t = $("#interviewq").html(interviewCategory.randomquestion());
+		$("#interviewq").append(t);
+	} else if (window.name == "Financial"){
+		console.log ("if");
+		financial =  new Category("a",financialquestions);
+		var fin = $("#financialq").html(financialCategory.randomquestion());
+		$("#financialq").append(fin);
+	}else if (window.name == "Flirt"){
+		console.log ("if");
+		flirt =  new Category("a",flirtquestions);
+		var fl = $("#q").html(flirtCategory.randomquestion());
+		$("#q").append(fl);
+	}else if (window.name == "Friendship"){
+		console.log ("if");
+		friendship =  new Category("a",friendshipquestions);
+		var fri = $("#q").html(friendshipCategory.randomquestion());
+		$("#q").append(fri);
+	}else if (window.name == "Sports"){
+		console.log ("if");
+		sports =  new Category("a",sportsquestions);
+		var sp = $("#q").html(sportsCategory.randomquestion());
+		$("#q").append(sp);
+	}else if (window.name == "Food"){
+		console.log ("if");
+		food =  new Category("a",foodquestions);
+		var fo = $("#q").html(foodCategory.randomquestion());
+		$("#q").append(fo);
+	}else if (window.name == "Shopping"){
+		console.log ("if");
+		shopping =  new Category("a",shoppingquestions);
+		var sh = $("#q").html(shoppingCategory.randomquestion());
+		$("#q").append(sh);	
+	}else if (window.name == "Entertainment"){
+		console.log ("if");
+		entertainment =  new Category("a",entertainmentquestions);
+		var en = $("#q").html(entertainmentCategory.randomquestion());
+		$("#q").append(en);
+	} else if (window.name == "Emergency"){
+		console.log ("if");
+		emergency =  new Category("a",emergencyquestions);
+		var em = $("#emergencyq").html(emergencyCategory.randomquestion());
+		$("#emergencyq").append(em);
+	} 
+}
+function saveInterviewCategory() {
+	window.name = ($('#IQ').val());
 }	
-
+function saveFinancialCategory() {
+	window.name = ($('#FQ').val());
+}	
+function saveSportsCategory() {
+	window.name = ($('#Sports').val());
+	
+}	
+function saveFlirtCategory() {
+	window.name = ($('#Flirt').val());
+}	
+function saveFoodCategory() {
+	window.name = ($('#Food').val());
+}	
+function saveShoppingCategory() {
+	window.name = ($('#Shopping').val());
+}	
+function saveEntertainmentCategory() {
+	window.name = ($('#Entertainment').val());
+}	
+function saveEmergencyCategory() {
+	window.name = ($('#emergencyq').val());
+}
 interviewquestions = ["What are your greatest strengths and weaknesses?"
 ,"What are some skills that you have that are unique?"
 ,"Tell me about a time where your work was criticized"
