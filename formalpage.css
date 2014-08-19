@@ -26,8 +26,6 @@ margin: 0 auto;
     background-color:#FF6633;
      color: white;
     border-radius:30px;
-   
-    
 }
 #FQ{font-size: 24px;
     font-family: georgia;
@@ -47,3 +45,8 @@ margin: 0 auto;
      color: white;
     border-radius:26px;
     }
+
+#f{
+	font-family: 'Karla', sans-serif;
+	font-size: 24px
+}
