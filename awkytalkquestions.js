@@ -156,13 +156,13 @@ worldnewsCategory = new Category("worldnews", worldnewsquestions);
 worldnewsCategory.printfunction();
 
 flirtquestions=["People call me ____ but you can call me tonight",
-"Help ive fallen for you and i cant get up"
-,"My name is ______ and I'm new around here. I was wondering if I could just talk to you for awhile because you're the first person whose made this city feel like home."
+"Help I've fallen for you and I cant get up"
+,"My name is ______ and I'm new around here. I was wondering if I could just talk to you for awhile because you're the first person who's made this city feel like home."
 ,"So, I have been trying to think of something clever to say to you but I can't get my foot out of my mouth so I'll go with hello, I'm _____."
 ,"Would you touch me so I can tell my friends I've been touched by an angel?"
 ,"The only thing your eyes haven't told me is your name."
 ,"Do you have a pencil? Cause I want to erase your past and write our future."
-,"I think I can die happy now, coz I've just seen a piece of heaven."
+,"I think I can die happy now, cause I've just seen a piece of heaven."
 ,"You must be a magician, because every time I look at you, everyone else disappears."
 ,"Excuse me...Hi, I'm writing an essay on the finer things in life, and I was wondering if I could interview you."
 ,"I hope there's a fireman around, cause you're smokin'!"
