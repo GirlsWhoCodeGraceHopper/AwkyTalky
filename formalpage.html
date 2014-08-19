@@ -19,22 +19,26 @@
     <div id= formalpagebuttons>
 	
 		<a href="formalblankq.html">
-			<input id="formrand" type="button" value="Random" style="width: 200px; height:100px"/>
+			<input id="formrand" type="button" value="Random" style="width: 200px; height:100px"OnClick = "saveFormalRandomCategory()"/>
 		</a>
     
 		<a href="formalblankq.html">
 			<input type="button" value="Interview" id="IQ" style="width: 200px; height:100px" onclick="saveInterviewCategory()"/>
 		</a>
+				
 		
 		<a href="formalblankq.html">
-				<input id="FQ" type="button" value="Financial" style="width: 200px; height:100px" onclick="saveFinancialCategory()/>
+				<input id="FQ" type="button" value="Financial" style="width: 200px; height:100px" onclick="saveFinancialCategory()"/>
 		</a>
 
-		<a href="formalblankq.html">
-			<input id="IA" type="button" value="World News" style="width: 200px; height:100px" onclick="saveWorldNewsCategory()/>
+		<a href = "formalblankq.html" >
+			<input id="IA" type="button" value="World News" style="width: 200px; height:100px" onclick="saveWorldNewsCategory()"/>
 		</a>
-				
-	</div>
-	
+		</div>
+		<script>
+		window.onload=function(){ 
+			display();
+		};
+		</script>
 	
  </body>   
