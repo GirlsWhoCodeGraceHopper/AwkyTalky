@@ -53,72 +53,72 @@ function display(){
 		
 		ref.orderByChild("name").equalTo("Financial").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			financial =  new Category("a");
+			var financialquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			financialCategory = new Category("financial", financialquestions);
 			var fin = $("#f").html(financialCategory.randomquestion());
 			$("#f").append(fin);
 		});
 	}else if (window.name == "World News"){
 		ref.orderByChild("name").equalTo("World News").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			worldnews =  new Category("a");
+			var worldnewsquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			worldnewsCategory = new Category("worldnews", worldnewsquestions);
 			var wn = $("#f").html(worldnewsCategory.randomquestion());
 			$("#f").append(wn);
 		});
 	}else if (window.name == "Flirt"){
-		ref.orderByChild("name").equalTo("flirt").once("value", function(snapshot) {
+		ref.orderByChild("name").equalTo("Flirt").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			flirt =  new Category("a");
+			var flirtquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			flirtCategory=new Category("Flirt",flirtquestions);
 			var fl = $("#q").html(flirtCategory.randomquestion());
 			$("#q").append(fl);
 		});
 	}else if (window.name == "Friendship"){
 		ref.orderByChild("name").equalTo("Friendship").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			friendship =  new Category("a");
+			var friendshipquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			friendshipCategory=new Category("friendship",friendshipquestions);
 			var fri = $("#q").html(friendshipCategory.randomquestion());
 			$("#q").append(fri);
 		});
 	}else if (window.name == "Sports"){
 		ref.orderByChild("name").equalTo("Sports").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			sports =  new Category("a");
+			var sportsquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			sportsCategory=new Category("Sports",sportsquestions);
 			var sp = $("#q").html(sportsCategory.randomquestion());
 			$("#q").append(sp);
 		});
 	}else if (window.name == "Food"){
-		ref.orderByChild("name").equalTo("Interview").once("value", function(snapshot) {
+		ref.orderByChild("name").equalTo("food").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			food =  new Category("a");
+			var foodquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			foodCategory = new Category("Food",foodquestions);
 			var fo = $("#q").html(foodCategory.randomquestion());
 			$("#q").append(fo);
 		});
 	}else if (window.name == "Shopping"){
 		ref.orderByChild("name").equalTo("Shopping").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			shopping =  new Category("a");
+			var shoppingquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			shoppingCategory=new Category("Shopping",shoppingquestions);
 			var sh = $("#q").html(shoppingCategory.randomquestion());
 			$("#q").append(sh);
 		});	
 	}else if (window.name == "Entertainment"){
 		ref.orderByChild("name").equalTo("Entertainment").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			entertainment =  new Category("a");
+			var entertainmentquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			entertainmentCategory=new Category("Entertainment",entertainmentquestions);
 			var en = $("#q").html(entertainmentCategory.randomquestion());
 			$("#q").append(en);
 		});
 	} else if (window.name == "Emergency"){
 		ref.orderByChild("name").equalTo("Emergency").once("value", function(snapshot) {
 			var obj = snapshot.val();
-			var questions = Object.keys(obj).map(function (key) { return obj[key].text; });
-			emergency =  new Category("a");
+			var emergencyquestions = Object.keys(obj).map(function (key) { return obj[key].text; });
+			emergencyCategory=new Category("EMERGENCY",emergencyquestions);
 			var em = $("#emergencyq").html(emergencyCategory.randomquestion());
 			$("#emergencyq").append(em);
 		});
@@ -196,14 +196,13 @@ function saveFormalRandomCategory() {
 // ,"Have you ever risked money in financial markets?"
 // ,"What is your opinion of investing in the stock market?"
 // ,"Are you interested in reading news about the financial world?"];
-// financialCategory = new Category("financial", financialquestions);
+// 
 // financialCategory.printfunction();
 // 
 // worldnewsquestions=["Anything new going on with the Middle east?"
 // ,"What do you think about tensions rising between Ukraine and Russia"
 // ,"Do you think the U.S has a great impact on the issues of the world today?"
 // ,"Do you feel that countries in Asia are developing rapidly?"]
-// worldnewsCategory = new Category("worldnews", worldnewsquestions);
 // worldnewsCategory.printfunction();
 // 
 // flirtquestions=["People call me ____ but you can call me tonight",
@@ -218,7 +217,6 @@ function saveFormalRandomCategory() {
 // ,"Excuse me...Hi, I'm writing an essay on the finer things in life, and I was wondering if I could interview you."
 // ,"I hope there's a fireman around, cause you're smokin'!"
 // ,"Hi, my friend thinks you're kinda cute, but I don't. I think you're absolutely gorgeous." ];
-// flirtCategory=new Category("Flirt",flirtquestions);
 // flirtCategory.printfunction();
 // 
 // friendshipquestions=["Do you play any instruments?",
@@ -233,7 +231,7 @@ function saveFormalRandomCategory() {
 // ,"Where do you plan on going for your next vacation?"
 // ,"If you could live anywhere in the world, where would it be?"
 // ,"What type of music do you like to listen to?"];
-// friendshipCategory=new Category("friendship",friendshipquestions);
+
 // friendshipCategory.printfunction();
 // 
 // sportsquestions=["Who is your favorite athlete?",
@@ -248,7 +246,6 @@ function saveFormalRandomCategory() {
 // ,"Are there any sports that you think should be included as an Olympic sport?(since ballroom and bridge dancing are considered a sport)"
 // ,"What new sports would you like to try?"
 // ,"What sport do you think is the most dangerous?"];
-// sportsCategory=new Category("Sports",sportsquestions);
 // sportsCategory.printfunction();
 // 
 // foodquestions=["What is your favorite drink?"
@@ -262,7 +259,6 @@ function saveFormalRandomCategory() {
 // ,"Whats your favorite take-out?"
 // ,"What did you have for dinner last night?"
 // ,"What restaurant do you love even though you know you shouldn't?"];
-// foodCategory=new Category("Food",foodquestions);
 // foodCategory.printfunction();
 // 
 // shoppingquestions=["Does this shop always have such long lines?"
@@ -277,7 +273,6 @@ function saveFormalRandomCategory() {
 // ,"When you buy something, do you read the label? Why or why not?"
 // ,"What stores have you shopped at in ___________? What store did you like best and what store did you like least? Why?"
 // ,"How important is good customer service when you are shopping?"];
-// shoppingCategory=new Category("Shopping",shoppingquestions);
 // shoppingCategory.printfunction();
 // 
 // entertainmentquestions=["Who is your favorite actor?",
@@ -292,8 +287,7 @@ function saveFormalRandomCategory() {
 // ,"What is the most valuable thing that you own?"
 // ,"What would you do if you only had 24 hours left to live?"
 // ,"Name five songs to which you know all the lyrics. (Better yet, sing them.)"];
-// entertainmentCategory=new Category("Entertainment",entertainmentquestions);
-// entertainmentCategory.printfunction();
+
 // 
 // emergencyquestions=["What do you do for a living?",
 // "Read anything interesting lately?"
@@ -307,7 +301,6 @@ function saveFormalRandomCategory() {
 // ,"What's up?"
 // ,"Do you drink coffee or tea?"
 // ,"What does your name mean? (If they say, 'I don't know', reply, 'What would you like it to mean?')"];
-// emergencyCategory=new Category("EMERGENCY",emergencyquestions);
 // emergencyCategory.printfunction();
 
 casualrandomquestions=["what cha doing?", "hows it going?", "whats up hommie","People call me ____ but you can call me tonight",
